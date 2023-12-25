@@ -1,0 +1,373 @@
+.container {
+    width: 100%;
+    min-height: 565;
+    display: grid;
+    grid-template-rows: 15% 85%;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav-menu h2{
+    display: inline-block;
+    color: #707070;
+}
+
+.nav-menu_opciones {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+}
+
+.button-nav{
+    background-color: #67C474;
+    border: none;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    
+    
+}
+
+.button-regresar a {
+    background-color: red;
+}
+
+.button-regresar{
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 40px;
+    background-color: #4B53C4;
+    border: none;
+    border-radius: 5px;
+}
+
+.form-ventas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-ventas h2 {
+    margin: 15px 0;
+}
+
+.form-ventas form {
+    width: 80%;
+    display: grid;
+    gap: 10px;
+}
+
+.input-fila1,
+.input-fila2 {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    
+}
+
+.input-fila3 {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.input-fila1 div,
+.input-fila2 div,
+.input-fila3 div {
+    position: relative;
+}
+
+form input {
+    width: 350px;
+    height: 50px;
+    background: none;
+    border: 2px solid #707070;
+    outline: none;
+    font-size: 16px;
+    padding: 14px 9px 0 9px;
+}
+
+form select {
+    width: 350px;
+    height: 50px;
+    background: none;
+    border: 2px solid #707070;
+    outline: none;
+    font-size: 16px;
+    padding-left: 5px;
+}
+
+form label {
+    color: #8F8A8A;
+    position: absolute;
+    left: 0;
+    bottom: 15px;
+    left: 10px;  
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+form .inputFocusActived ~label {
+    transform: translateY(-15px);
+    color: #4B53C4;
+    font-size: 10px;
+
+}
+
+form .inputFocusActived {
+    border-color: #4B53C4;
+}
+
+form .selectFocusActived {
+    border-color: #4B53C4;
+}
+
+.button-op {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.button-op .btn-cancelar {
+    border: 1px solid #4B53C4;
+    background-color: #fff;
+    color: #4B53C4;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 15px 30px;
+}
+
+.button-op .btn-crear {
+    border: none;
+    background-color: #4B53C4;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    height: 50px;
+    width: 151.78px;
+    font-size: 17px;
+}
+
+.button-op .btn-cancelar {
+    margin-right: 40px;
+}
+
+.info_id {
+    color: #707070;
+    margin-bottom: 15px;
+    width: 80%;
+    border: none;
+}
+
+.idElemento {
+    display: none;
+}
+.container_buscar {
+    width: 60%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.container_buscador {
+    width: 65%;
+    margin-bottom: 20px;
+}
+
+.container_buscador input {
+    width: 100%;
+    height: 50px;
+    background: none;
+    border: 2px solid #383be7;
+    outline: none;
+    font-size: 16px;
+    padding-left: 10px;
+    border-radius: 10px;
+}
+
+.container_buscador ul {
+    list-style: none;
+    
+}
+
+.fa-search {
+    color: #707070;
+}
+
+.container_buscador ul li {
+    
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #878788;
+
+
+}
+
+.container_buscador_encontrado ul .li_encontrado {
+    width: 510.73px;
+    padding: 10px;
+    background-color: white;
+    
+    
+}
+
+.container_buscador_encontrado {
+    width: 65%;
+    margin-bottom: 20px;
+}
+
+.container_buscador_encontrado input {
+    width: 100%;
+    height: 50px;
+    background: none;
+    border: 2px solid #383be7;
+    outline: none;
+    font-size: 16px;
+    padding-left: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom: none;
+}
+
+.container_buscador_encontrado ul {
+    list-style: none;
+    position: absolute;
+    z-index: 1;
+    border: 1px solid #878788;
+}
+
+
+.container_buscador_encontrado ul li:hover {
+    background-color: #e2e2e4;
+}
+
+.btn_cargar_datos {
+    border: none;
+    color: #fff;
+    background-color: #383be7;
+    padding: 5px;
+    height: 50px;
+    border-radius: 8px;
+}
+
+.btn_quitar_datos {
+    border: none;
+    color: #fff;
+    background-color: #878788;
+    padding: 5px;
+    height: 50px;
+    border-radius: 8px;
+}
+
+.disable {
+    background-color: #f7f7f8;
+}
+
+form .disable ~label{
+    transform: translateY(-15px);
+    color: #4B53C4;
+    font-size: 10px;
+}
+
+
+
+.btn_quitar_datos_active {
+    border: none;
+    color: #fff;
+    background-color: #f00;
+    padding: 5px;
+    height: 50px;
+    border-radius: 8px;
+}
+
+.formulario__validacion-estado {
+	position: absolute;
+	right: 10px;
+	bottom: 15px;
+	z-index: 100;
+	font-size: 16px;
+	opacity: 0;
+}
+
+.formulario__input-error,
+.formulario__input-error2 {
+	font-size: 12px;
+	margin: 10px 0;
+	width: 350px;
+    display: none;
+}
+
+.formulario__input-error-activo {
+	display: block;
+}
+
+.formulario__mensaje {
+    margin-top: 15px;
+	height: 45px;
+	line-height: 45px;
+	background: #F66060;
+	padding: 0 15px;
+	border-radius: 3px;
+    display: none;
+}
+
+.formulario__mensaje-activo {
+	display: block;
+}
+
+.formulario__mensaje p {
+	margin: 0;
+}
+
+.formulario__mensaje-exito {
+    margin-top: 25px;
+	height: 45px;
+	line-height: 45px;
+	background: #5df04a;
+	padding: 0 15px;
+	border-radius: 3px;
+    display: none;
+}
+
+.formulario__mensaje-exito-activo {
+	display: block;
+}
+
+/* Validacion de Formularios Input*/
+
+.formulario__grupo-correcto .formulario__validacion-estado {
+	color: #1ed12d;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__label {
+	color: #bb2929;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+	color: #bb2929;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input {
+	border: 3px solid #bb2929;
+}
+
+/* Validacion de Formularios Select */
+
+.formulario__grupo-incorrecto .formulario__select {
+	border: 3px solid #bb2929;
+}

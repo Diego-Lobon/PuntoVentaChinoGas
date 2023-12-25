@@ -1,0 +1,40 @@
+.header {
+    background-color: #667FFC;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.header img {
+    width: 40px;
+}
+
+.info-usuario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 16px;
+}
+
+.info-usuario span {
+    margin-left: 20px;
+}
+
+.cerrarSesion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cerrarSesion button {
+    background: none;
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.cerrarSesion img {
+    margin-right: 20px;
+}
