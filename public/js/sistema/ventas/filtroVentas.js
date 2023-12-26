@@ -50,7 +50,7 @@ function filtro(){
 
     const csrfToken = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
 
-    fetch('http://127.0.0.1:8000/ventas/filtro', {
+    fetch('https://puntoventachinogas-production.up.railway.app/ventas/filtro', {
         method: 'POST',
         body: JSON.stringify({nombreVendedor: nombreVendedor, tipoCliente: tipoCliente, nombreProducto: nombreProducto, fechaVenta: fechaVenta}),
         headers: {
