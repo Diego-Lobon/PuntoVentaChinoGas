@@ -22,7 +22,7 @@ const campos = {
 function enviarValor(inputValue, input) {
     const csrfToken = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
     const idCliente = document.getElementById('idElemento');
-    fetch('http://127.0.0.1:8000/clientes/'+idCliente.value+'/editar', {
+    fetch('https://puntoventachinogas-production.up.railway.app/clientes/'+idCliente.value+'/editar', {
         method: 'POST',
         body: JSON.stringify({inputValue: inputValue, idCliente: idCliente.value}),
         headers: {
