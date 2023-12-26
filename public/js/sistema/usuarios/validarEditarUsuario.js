@@ -22,7 +22,7 @@ function enviarValor(inputValue, input, campo, peticion) {
     const csrfToken = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
     const idUsuario = document.getElementById('idElemento');
     const password = document.getElementById('password');
-    fetch('http://127.0.0.1:8000/usuarios/'+idUsuario.value+'/editar', {
+    fetch('https://puntoventachinogas-production.up.railway.app/usuarios/'+idUsuario.value+'/editar', {
         method: 'POST',
         body: JSON.stringify({inputValue: inputValue, idUsuario: idUsuario.value, password: password.value}),
         headers: {
