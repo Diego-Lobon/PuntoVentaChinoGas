@@ -1,7 +1,7 @@
 $('#buscador').keyup(function() {
     
         const csrfToken = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
-        fetch('http://127.0.0.1:8000/ventas/crear', {
+        fetch('https://puntoventachinogas-production.up.railway.app/ventas/crear', {
             method: 'POST',
             body: JSON.stringify({inputValue: $(this).val()}),
             headers: {
