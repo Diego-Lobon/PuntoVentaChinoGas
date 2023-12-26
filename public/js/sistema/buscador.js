@@ -94,7 +94,7 @@ $('#btn_cargar_datos').click(function() {
     const csrfToken = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
     const input = document.getElementById('buscador')
 
-    fetch('http://127.0.0.1:8000/ventas/crear/datosCliente', {
+    fetch('https://puntoventachinogas-production.up.railway.app/ventas/crear/datosCliente', {
         method: 'POST',
         body: JSON.stringify({inputValue: input.value}),
         headers: {
