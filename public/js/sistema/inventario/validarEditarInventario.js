@@ -19,7 +19,7 @@ const campos = {
 function enviarValor(inputValue, input) {
     const csrfToken = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
     const idProducto = document.getElementById('idElemento');
-    fetch('http://127.0.0.1:8000/inventario/'+idProducto.value+'/editar', {
+    fetch('https://puntoventachinogas-production.up.railway.app/inventario/'+idProducto.value+'/editar', {
         method: 'POST',
         body: JSON.stringify({inputValue: inputValue, idProducto: idProducto.value}),
         headers: {
